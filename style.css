@@ -1,0 +1,140 @@
+/*****************/
+/*Global Styling */
+/*****************/
+* {
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'BhuTuka Expanded One', cursive;
+  font-family: 'Dancing Script', cursive;
+  background-image: url('a.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 800px;
+
+}
+header{
+  display: flex;
+  align-items: center;
+  height: 125px;
+  grid-area: header;
+}
+header > div{
+  flex-grow: 1;
+  height: 100%;
+}
+header > div > a > img{
+  width: auto;
+  height: 100%;
+  border-radius: 50px;
+}
+header > nav > ul{
+  display: flex;
+  list-style: none;
+}
+header > nav > ul > li{
+  padding: 0px 15px;
+}
+header > nav > ul > li > a{
+  color: #000000;
+  text-decoration: none;
+}
+header > nav > ul > li > a:hover{
+  border: 1px solid #b3b3b3;
+  background: #7B7D7D;
+  transition: 1s;
+}
+.text{
+  width: 90%;
+  color: #E5874A;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  padding-left: 5px;
+}
+.text > h1{
+  font-size: 50px;
+  font-family:'BhuTuka Expanded One';
+  font-weight: bold;
+  padding-left: 5px;
+}
+.text > p{
+  margin: 10px 0 40px;
+  font-size: 20px;
+  font-family: 'Dancing Script', cursive;
+  font-style: italic;
+  font-weight: bolder;
+  color: #BC5023;
+}
+.btn-1{
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+  border: 1px solid #071330;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.btn-1:hover{
+  border: 1px solid #b3b3b3;
+  background: #7B7D7D;
+  transition: 1s;
+}
+footer{
+  background: #000000;
+}
+.footer-content{
+  padding: 3%;
+  text-align: center;
+  bottom: 0px;
+  position: absolute;
+  padding-left: 40%;
+}
+.footer-content h3{
+  color: #fff;
+  font-size: 25px;
+  font-family: serif;
+  background: #000000;
+}
+.socials{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  background: #000000;
+}
+.socials li{
+  margin: 0 10px;
+  background: #000000;
+}
+.socials a{
+  text-decoration: none;
+  color: #ffffff;
+  background: #000000;
+}
+.socials a i{
+  font-size: 1.1rem;
+  background: #000000;
+}
+.socials a{
+  color: #DBE0DC;
+  background: #000000;
+}
+
+@media screen and (max-width: 1024px){
+  header{
+    width: 100%
+  }
+}
